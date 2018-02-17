@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inputs</title>
+  </head>
+  <body>
+    <br/>
+    <form class="contact-form" action="#" method="post">
+      <fieldset>
+        <legend>Login details</legend>
+        <label for="user-name">User Name</label>
+        <input
+          type="text"
+          name="user-name"
+          value=""
+          placeholder="Please enter your name"
+        />
+        <br/>
+        <br/>
+        <label for="pass-word">Password</label>
+        <input
+          type="password"
+          name="pass-word"
+          value=""
+          placeholder="Please enter your password"
+        />
+      </fieldset>
+      <br/>
+      <br/>
+      <fieldset>
+        <legend>Personal details</legend>
+        <label for="e-mail">e-mail ID</label>
+        <input
+          type="email"
+          name="e-mail"
+          value=""
+          placeholder="Please enter your e-mail ID"
+        />
+        <br/>
+        <br/>
+        <label for="pnumber">Phone number</label>
+        <input
+          type="number"
+          name="pnumber"
+          value=""
+          placeholder="Please enter your phone number"
+        />
+        <br/>
+        <br/>
+        <label for="is-true">Is True</label>
+        <input type="checkbox" name="is-true" value="1">
+        <br/>
+        <br/>
+        <label for="male-btn">Male</label>
+        <input type="radio" name="gender" value="male" id="male-btn">
+        <br/>
+        <br/>
+        <label for="female-btn">Female</label>
+        <input type="radio" name="gender" value="female" id="female-btn">
+        <br/>
+        <br/>
+        <label for="other-btn">Other</label>
+        <input type="radio" name="gender" value="other" id="other-btn">
+        <br/>
+        <br/>
+        <label for="fav-color">Favorite color: </label>
+        <input type="color" name="favcolor" id="fav-color">
+        <br/>
+        <br/>
+        <label for="dob-selector">Date of birth: </label>
+        <input type="date" name="dob" id="dob-selector">
+      </fieldset>
+      <br/>
+      <br/>
+      <button type="submit" name="submit-button">Submit</button>
+      <button type="reset" name="button">Reset</button>
+    </form>
+  </body>
+</html>

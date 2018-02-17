@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flex Box</title>
+    <style media="screen">
+      .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 95vh;
+        background-color: aquamarine;
+      }
+      header{
+        background-color: floralwhite;
+        height: 50px;
+      }
+      nav{
+        background-color: green;
+        height: 40px;
+      }
+      footer{
+        background-color: red;
+        height: 30px;
+      }
+      .main-content{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 100%;
+        width: 100%;
+      }
+      .l-sec{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        background-color: grey;
+      }
+      .i-article-one{
+        height: 50%;
+        background-color: blue;
+      }
+      .i-article-two{
+        height: 50%;
+        background-color: pink;
+      }
+      @@media only screen and (max-width: 400px) and (min-width: 300px) {
+        .main-content{
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+      </header>
+      <nav>
+      </nav>
+      <div class="main-content">
+        <section class="l-sec">
+          <article class="i-article-one">
+
+          </article>
+          <article class="i-article-two">
+
+          </article>
+        </section>
+        <aside class="a-side">
+
+        </aside>
+      </div>
+      <footer>
+      </footer>
+    </div>
+  </body>
+</html>
